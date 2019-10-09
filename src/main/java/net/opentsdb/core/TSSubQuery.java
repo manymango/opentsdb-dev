@@ -85,7 +85,9 @@ public final class TSSubQuery {
    * tags map. In the future we'll have special JSON objects for them. */
   private List<TagVFilter> filters;
   
-  /** Whether or not to match series with ONLY the given tags */
+  /** Whether or not to match series with ONLY the given tags
+   * true:data point有几个tag就必须指定几个tag    false：可以不指定全部tag进行查询
+   * */
   private boolean explicit_tags;
   
   /** Whether or not to enable fuzzy scanning if explicit tags is set */
