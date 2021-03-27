@@ -332,6 +332,9 @@ final class CompactionQueue extends ConcurrentSkipListMap<byte[], Boolean> {
     }
 
     /**
+     *
+     * 开始压缩
+     *
      * Perform the compaction.
      *
      * @return A {@link Deferred} if the compaction processed required a write

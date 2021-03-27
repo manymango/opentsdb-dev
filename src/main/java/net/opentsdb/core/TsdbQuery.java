@@ -738,7 +738,11 @@ final class TsdbQuery implements Query {
       throw new RuntimeException("Should never be here", e);
     }
   }
-  
+
+
+  /**
+   * 查询开始
+   */
   @Override
   public Deferred<DataPoints[]> runAsync() throws HBaseException {
     Deferred<DataPoints[]> result = null;

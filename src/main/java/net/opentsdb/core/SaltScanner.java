@@ -260,6 +260,7 @@ public class SaltScanner {
   }
 
   /**
+   * 进行scan查询
    * Starts all of the scanners asynchronously and returns the data fetched
    * once all of the scanners have completed. Note that the result may be an
    * exception if one or more of the scanners encountered an exception. The 
@@ -528,6 +529,7 @@ public class SaltScanner {
     }
 
     /**
+     * 对查询结果进行处理
     * Iterate through each row of the scanner results, parses out data
     * points (and optional meta data).
     * @return null if no rows were found, otherwise the SortedMap with spans
